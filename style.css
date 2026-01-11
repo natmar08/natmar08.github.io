@@ -58,17 +58,13 @@ h1{
   color: #df1b1b;
 }
 
-.bg {
-    width: 100%;
-    height: 500px;
 
-    background-image: url("https://destinationkosta.se/sv/media/604");
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat; 
+
+body { background-color: dimgray;
+background: #111;
+    font-family: Arial, sans-serif;
+    color: #fff;
 }
-
-body { background-color: dimgray;}
 
 .section {
     display: flex;
@@ -101,4 +97,158 @@ body { background-color: dimgray;}
     text-decoration: none;
     border-radius: 6px;
     margin-top: 20px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #a89292;
+    padding: 40px;
+  
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    width: 100%;
+    max-width: 350px;
+}
+
+.card h2 {
+    color: #f82525;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: #f82525;
+}
+
+.per {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card li::before {
+    content: "✔";
+    color: #f82525;
+    margin-right: 10px;
+}
+
+.bg {
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.overlay{
+    width: 100% ;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6   );
+}
+
+
+footer {
+background: #3f3f3f;
+color: #ffffff;
+padding: 40px 20px;
+}
+
+
+.footer-container {
+display: grid;
+grid-template-columns: 1.5fr 1fr 1fr;
+gap: 60px;
+max-width: 1400px;
+margin: 0 auto;
+}
+
+
+
+
+.logo span {
+color: #f52323;
+font-weight: 500;
+}
+
+
+.tagline {
+color: #f52323;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 40px;
+}
+
+
+h3 {
+color: #f52323;
+margin-bottom: 20px;
+font-size: 22px;
+}
+
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+li {
+margin-bottom: 14px;
+font-size: 18px;
+}
+
+
+.contact li {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+
+.icon {
+color: #f52323;
+font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  .contact li {
+    justify-content: center;
+  }
 }
